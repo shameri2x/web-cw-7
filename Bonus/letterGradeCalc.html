@@ -41,11 +41,17 @@
             الرقم       الحرف
               D        60 - 69
               C        70 - 79
-              B        80 - 95
+              B        80 - 90
               A        90 - 100
         */
-        if (condition) {
+        if (total <60) {
           document.getElementById("status").innerHTML = "D";
+        }else if ( total<79) {
+          document.getElementById("status").innerHTML = "C";
+        }else if (total <90) {
+          document.getElementById("status").innerHTML = "B";
+        }else if (total <=100) {
+          document.getElementById("status").innerHTML = "A";
         }
         // أكمل
       }
